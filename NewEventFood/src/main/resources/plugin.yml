@@ -1,0 +1,5 @@
+name: NewEventFood
+main: smallbear.NEFood
+author: smallbear  
+version: 1.0.0-SNAPSHOT
+api: [1.0.0]
