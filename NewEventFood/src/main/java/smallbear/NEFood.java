@@ -21,40 +21,40 @@ public class NEFood extends PluginBase implements Listener {
 		
 		if(cmd.equals("크리스마스쿠키구매")){
 			if(args.length < 1){
-				sender.sendMessage("[크리스마스]쿠키를 구매하시겠습니까?(1000원)");
-				player.getInventory().addItem(new Item(357,0,5).setCustomName("§f[크리스마스]쿠키"));      //쿠키 : 357
+				sender.sendMessage("[크리스마스]쿠키를 구매하셨습니다.(12개)(1200원)");
+				player.getInventory().addItem(new Item(357,0,12).setCustomName("§f[크리스마스]쿠키"));
 				EconomyAPI.getInstance().reduceMoney(player, 1000);
 			}
 		}
 		if(cmd.equals("크리곰국구매")){
 			if(args.length < 1){
-				sender.sendMessage("[크리스마스]곰국 5개를 구매하시겠습니까?(1000원)");
-				player.getInventory().addItem(new Item(282,0,5).setCustomName("§f[크리스마스]곰국"));      //버섯스프 : 282
+				sender.sendMessage("[크리스마스]곰국을 구매하셨습니다.(3개)(1200원)");
+				player.getInventory().addItem(new Item(282,0,3).setCustomName("§f[크리스마스]곰국"));
 				EconomyAPI.getInstance().reduceMoney(player, 1000);
 			}
 		}
 		if(cmd.equals("크리라면구매")){
 			if(args.length < 1){
-				sender.sendMessage("[크리스마스]라면 5개를 구매하시겠습니까?(1000원)");
-				player.getInventory().addItem(new Item(459,0,5).setCustomName("§f[크리스마스]라면"));     //비트스프  : 459
+				sender.sendMessage("[크리스마스]라면을 구매하셨습니다.(3개)(1200원)");
+				player.getInventory().addItem(new Item(459,0,3).setCustomName("§f[크리스마스]라면"));
 				EconomyAPI.getInstance().reduceMoney(player, 1000);
 			}
 		}
 		if(cmd.equals("크리호박파이구매")){
 			if(args.length < 1){
-				sender.sendMessage("[크리스마스]호박파이 5개를 구매하시겠습니까?(1000원)");
-				player.getInventory().addItem(new Item(400,0,5).setCustomName("§f[크리스마스]호박파이"));   //호박파이  : 400
+				sender.sendMessage("[크리스마스]호박파이를 구매하셨습니다.(3개)(1200원)");
+				player.getInventory().addItem(new Item(400,0,3).setCustomName("§f[크리스마스]호박파이"));
 				EconomyAPI.getInstance().reduceMoney(player, 1000);
 			}
 		}
 		if(cmd.equals("크리음식셋구매")){
 			if(args.length < 1){
-				sender.sendMessage("[크리스마스]음식셋을 구매하시겠습니까?(4000원)");
-				player.getInventory().addItem(new Item(364,0,1).setCustomName("§f[크리스마스]스테이크(서비스)"));   //스테이크 : 364
-				player.getInventory().addItem(new Item(459,0,5).setCustomName("§f[크리스마스]라면"));
-				player.getInventory().addItem(new Item(282,0,5).setCustomName("§f[크리스마스]곰국"));
-				player.getInventory().addItem(new Item(357,0,5).setCustomName("§f[크리스마스]쿠키"));
-				player.getInventory().addItem(new Item(400,0,5).setCustomName("§f[크리스마스]호박파이"));
+				sender.sendMessage("[크리스마스]음식셋을 구매하셨습니다.(라면,곰국,쿠키,호박파이)(4500원)");
+				player.getInventory().addItem(new Item(364,0,1).setCustomName("§f[크리스마스]스테이크(서비스)"));
+				player.getInventory().addItem(new Item(459,0,3).setCustomName("§f[크리스마스]라면"));
+				player.getInventory().addItem(new Item(282,0,3).setCustomName("§f[크리스마스]곰국"));
+				player.getInventory().addItem(new Item(357,0,12).setCustomName("§f[크리스마스]쿠키"));
+				player.getInventory().addItem(new Item(400,0,3).setCustomName("§f[크리스마스]호박파이"));
 				EconomyAPI.getInstance().reduceMoney(player, 4000);
 			}
 		}
